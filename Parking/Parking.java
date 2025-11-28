@@ -19,16 +19,16 @@ public class Parking {
         this.capacity = capacity;
     }
 
-    public long freePlaceCalculator(List<Car> cars) {
-        long occupiedParking = cars.stream()
-                .filter(car -> car.parkingId == id)
-                .limit(capacity)
-                .count();
-        return capacity - occupiedParking;
-    }
-
-    public double bestParkingPercentage(List<Car> cars) {
-        return ((double) freePlaceCalculator(cars) / capacity) * 100;
-    }
+//    public long freePlaceCalculator(List<Car> cars) {
+//        long occupiedParking = cars.stream()
+//                .filter(car -> car.parkingId == id)
+//                .limit(capacity)
+//                .count();
+//        return capacity - occupiedParking;
+//    }
+//
+//    public double bestParkingPercentage(List<Car> cars) {
+//        return ((double) freePlaceCalculator(cars) / capacity) * 100;
+//    }
 
 }
